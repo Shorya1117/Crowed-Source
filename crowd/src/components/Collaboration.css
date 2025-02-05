@@ -1,0 +1,87 @@
+/* src/Collaboration.css */
+
+.collaboration-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .post-request, .incoming-requests {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .post-request h3, .incoming-requests h3 {
+    color: #555;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .incoming-requests {
+    margin-top: 30px;
+  }
+  
+  .request-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .request-card h4 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .request-card p {
+    margin: 5px 0;
+  }
+  
+  .request-card button {
+    margin-top: 10px;
+    background-color: #333;
+  }
+  
+  .request-card button:hover {
+    background-color: #555;
+  }
+  

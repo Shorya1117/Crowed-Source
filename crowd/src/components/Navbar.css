@@ -1,0 +1,97 @@
+/* src/Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-buttons button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 12px;
+    position: relative;
+    transition: all 0.3s ease;
+    outline: none;  /* Ensure there's no outline appearing */
+    text-transform: uppercase;
+  }
+  
+  .navbar-buttons button::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .navbar-buttons button:hover {
+    color: #6529df;  /* Change text to purple on hover */
+    background: white; 
+     /* Set background to white on hover */
+  }
+  
+  .navbar-buttons button:hover::after {
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  
+  @media (max-width: 768px) {
+    .navbar-buttons {
+      display: none; /* Initially hide buttons on smaller screens */
+    }
+  
+    .navbar {
+      position: relative;
+    }
+  
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  
+  /* Toggle menu display */
+  @media (max-width: 768px) {
+    .navbar.open .navbar-buttons {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #333;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .navbar-buttons button {
+      padding: 10px 0;
+      width: 100%;
+    }
+  }
+  

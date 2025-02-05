@@ -1,0 +1,136 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; /* Reduced width */
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+    max-height: 650px; /* Set a max height to make it more compact */
+    overflow-y: auto; /* If content exceeds, show scroll */
+    margin-top: -40px;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  
+  /* Modal Heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 20px; /* Slightly smaller font size */
+    color: #333;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 12px; /* Reduced margin for compactness */
+  }
+  
+  /* Labels */
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px; /* Reduced margin */
+    color: #444;
+    font-size: 14px;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="file"],
+  textarea {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    margin-top: 5px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 100px; /* Reduced height */
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form Responsive Design */
+  @media (max-width: 600px) {
+    .modal-content {
+      padding: 15px; /* Reduced padding for mobile */
+    }
+  
+    .form-group label {
+      font-size: 12px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="file"],
+    textarea {
+      font-size: 12px;
+    }
+  
+    button[type="submit"] {
+      font-size: 12px;
+    }
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
